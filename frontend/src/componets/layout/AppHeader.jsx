@@ -3,7 +3,7 @@ import { useCrypto } from './AppContent';
 import { icons } from 'antd/es/image/PreviewGroup';
 import { useEffect, useState } from 'react';
 import CoinInfoModal from '../CoinInfoModal';
-import AddAssetForm from '../AddAssetform';
+import AddAssetForm from '../AddAssetForm';
 
 const headerStyle = {
   with: '100%',

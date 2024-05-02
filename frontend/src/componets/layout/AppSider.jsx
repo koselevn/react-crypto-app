@@ -28,8 +28,8 @@ export default function AppSider() {
                 size='small'
                         dataSource={[
                             { title: 'Total ptofit', value: asset.totalProfit, withTag: true },
-                            {title: 'Asset Amount', value: asset.amount, isPlain: true},
-                            {title: 'Total Amount', value: asset.totalAmount},
+                            { title: 'Asset Amount', value: asset.amount, isPlain: true },
+                            { title: 'Total Amount', value: asset.totalAmount },
                 ]}
                 renderItem={(item) => (
                     <List.Item>
