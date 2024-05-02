@@ -5,6 +5,6 @@ import react from '@vitejs/plugin-react';
 export default defineConfig({
   plugins: [react()],
   build: {
-    outDir: 'dist', // Указываем директорию "dist" для сборки
+    outDir: 'build', // Указываем директорию "build" для сборки
   },
 });
