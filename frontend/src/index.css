@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-#root {
+.sidebar {
   @media (max-width: 1147px) {
     background-color: #001529;
   }
