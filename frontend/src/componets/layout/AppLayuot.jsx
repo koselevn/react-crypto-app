@@ -3,10 +3,21 @@ import AppHeader from './AppHeader';
 import AppSider from './AppSider';
 import AppContent from './AppContent';
 import CryptoContext from '../../context/cryptoContext';
-import { useContext } from 'react';
+import { useContext, useState } from 'react';
 
 export default function AppLayout() {
     const { loading } = useContext(CryptoContext)
+
+    const screenWidth = window.innerWidth;
+    if (screenWidth <= 1147) {
+        return (
+            <>
+                <AppHeader /> 
+                <AppSider />
+                <AppContent />
+            </>
+        )
+    }
 
     if (loading) {
         return (<Spin fullscreen />)
@@ -14,7 +25,7 @@ export default function AppLayout() {
 
     return (
         <Layout >
-          <AppHeader />
+          <AppHeader /> 
             <Layout>
                 <AppSider />
                 <AppContent />
